@@ -15,6 +15,9 @@ Provides localized information that details an add-on (also called an in-app pro
 ## -remarks
 You access this object by picking an element of the collection that the [ProductListings](listinginformation_productlistings.md) property of the [ListingInformation](listinginformation.md) object returns.
 
+Warning: Accessing the properties CurrencyCode, FormattedBasePrice, IsOnSale and SaleEndDate using Store simulator (Windows.ApplicationModel.Store.CurrentAppSimulator) or calling it on Windows build 10.0.10240.0 will throw System.InvalidCastException
+
+
 ## -examples
 This code example here shows how to get the [ListingInformation](listinginformation.md) from simulated app data and then get the [ProductListing](productlisting.md) object an add-on.
 
